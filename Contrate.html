@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale="1.0">
     <link rel="stylesheet" href="style.css">
-    <style>
-        body,html{
-            overflow-y:auto;
-            background: linear-gradient(to top, #8C0303, #D93654);
-        }
-    </style>
     <link rel="shortcut icon" href="imagens/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Forró dos Tops</title>
 </head>
-<body>
+<body id="page_contrate">
     <header>
         <div class="logo">
             <h1><img src="imagens/logo 300.png" alt="Logo"></h1>
@@ -27,35 +22,47 @@
             </ul>
         </nav>
     </header>
-    <main class="corpo-conteudo">
-        <aside class="contrate">  <!--CONTEÚDO DO LADO ESQUERDO DA PÁGINA-->
-            <form action="#">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" nome="telefone">
-                <label for="e-mail">E-mail:</label>
-                <input type="email" id="e-meil" nome="e-mail">
-                <label for="data">Data do Evento:</label>
-                <input type="date" id="data" nome="data">
-                <label for="local">Local do evento:</label>
-                <input type="text" id="local" nome="local">
-                <label for="detalhes">Mais Detalhes:</label>
-                <input type="text" id="detalhes" nome="detalhes">
-                <p>Após enviar sua solicitação de contratação, nos verificaremos a disponibilidade da data do evento, e entraremos em contato através das informações fornecidas.</p>
-                <input type="submit" value="Solicitar Contratação">
-            </form>
-        </aside>
+    <main id="conteudo">
         <article>   <!--CONTEÚDO DO LADO DIREITO DA PÁGINA-->
+            <ul id="lista_sociais">
+                <li><a class="redes_sociais" href="https://www.facebook.com/forrodostopsofc" target="_blank" rel="external"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a class="redes_sociais" href="https://www.instagram.com/forrodostopsofc" target="_blank" rel="external"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a class="redes_sociais" href="https://www.youtube.com/@forrodostopsoficial1956" target="_blank" rel="external"><i class="fa-brands fa-square-youtube"></i></a></li>
+            </ul>
             <div class="figura">
                 <img src="imagens/ian e mara.png" alt="imagem dos cantores">
             </div>
-            <ul class="redes-sociais">
-                <a href="https://www.facebook.com/forrodostopsofc" target="_blank" rel="external"><li><img src="imagens/Facebook.png" alt="página do facebook"></li></a>
-                <a href="https://www.instagram.com/forrodostopsofc" target="_blank" rel="external"><li><img src="imagens/instagram.png" alt="perfil do instagram"></li></a>
-                <a href="https://www.youtube.com/@forrodostopsoficial1956" target="_blank" rel="external"><li><img src="imagens/YouTube.png" alt="Canal do Youtube"></li></a>
-            </ul>
         </article>
+        <aside id="container">  <!--CONTEÚDO DO LADO ESQUERDO DA PÁGINA-->
+            <form id="formulario">
+                <div class="box_input">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="box_input">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" nome="telefone">
+                </div>
+                <div class="box_input">
+                    <label for="e-mail">E-mail:</label>
+                    <input type="email" id="e-meil" nome="e-mail">
+                </div>
+                <div class="box_input">
+                    <label for="data">Data do Evento:</label>
+                    <input type="date" id="data" nome="data">
+                </div>
+                <div class="box_input">
+                    <label for="local">Local do evento:</label>
+                    <input type="text" id="local" nome="local">
+                </div>
+                <div class="box_input">
+                    <label for="detalhes">Mais Detalhes:</label>
+                    <input type="text" id="detalhes" nome="detalhes">
+                </div>
+                <p>Após enviar sua solicitação de contratação, nos verificaremos a disponibilidade da data do evento, e entraremos em contato através das informações fornecidas.</p>
+                <input class="btn_contrate" type="submit" value="Solicitar Contratação">
+            </form>
+        </aside>
     </main>
 </body>
 </html>
