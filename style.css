@@ -145,7 +145,7 @@ footer{
     display: block;
     width: 100px;
     height: 100px;
-    background-color: var(--cor1);
+    background-color: var(--cor3);
     margin: 10px auto;
     border-radius: 50%;
     align-items: center;
@@ -298,4 +298,34 @@ footer{
 .rodape_page_sobre{
     background-color: var(--cor5);
     color: var(--cor4);
+}
+
+/*CONFIGURAÇÕES LISTA MÍDIAS*/
+#midia_list{
+    position: relative;
+}
+#midia_list:hover #sub-menu{
+    height: 76px;
+}
+#sub-menu{
+    background-color: var(--cor3);
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    overflow: hidden;
+    height: 0px;
+    z-index: 2;
+    transition-duration: 0.3s;
+}
+#sub-menu ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+}
+#sub-menu ul li{
+    padding: 5px ;
+    color: var(--cor4);
+}
+#sub-menu ul li:hover{
+    background-color: var(--cor1);
 }
