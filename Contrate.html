@@ -60,9 +60,16 @@
                     <input type="text" id="detalhes" nome="detalhes">
                 </div>
                 <p>Após enviar sua solicitação de contratação, nos verificaremos a disponibilidade da data do evento, e entraremos em contato através das informações fornecidas.</p>
-                <input class="btn_contrate" type="submit" value="Solicitar Contratação">
+                <button onclick="solicitarContratacao()" class="btn_contrate" type="submit">Solicitar Contratação</button>
             </form>
         </aside>
     </main>
+    <div id="msg_confirmacao">
+        <div>
+            <p>Solicitação feita com sucesso! Aguarde nosso retorno.</p>
+            <button class="btn_contrate">Ok</button>
+        </div>
+    </div>
+    <script src="javascript/script.js"></script>
 </body>
 </html>
